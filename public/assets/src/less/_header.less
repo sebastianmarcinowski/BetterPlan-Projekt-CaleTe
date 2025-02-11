@@ -1,0 +1,47 @@
+header {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid @lineColor;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  img {
+    height: 60px;
+    max-width: 100%;
+  }
+
+  #customization-buttons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #5353ec;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken(#5353ec, 10%);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  @media(max-width: @mobileBreakpoint){
+    flex-direction: column;
+    img {
+      height: 100px;
+    }
+    #customization-buttons {
+      gap: 10px;
+    }
+  }
+}

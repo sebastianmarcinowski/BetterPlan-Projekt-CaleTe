@@ -1,0 +1,5 @@
+.idea
+/config/config.php
+/data.db
+/node_modules
+/public/assets/dist
